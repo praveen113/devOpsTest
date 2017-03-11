@@ -33,3 +33,15 @@
     </template>
   </ngb-panel>
 </ngb-accordion>
+
+<p>
+  <ngb-alert [dismissible]="false">
+    <strong>Warning!</strong> Better check yourself, you're not looking too good.
+  </ngb-alert>
+</p>
+
+<ngb-alert [hidden] = "hidesucess" [type]="typesuccess" (click) = "hsucess()">Success</ngb-alert>
+<ngb-alert [hidden] = "hidewarning" [type]="typewarning" (click) = "hwarning()">Warning</ngb-alert>
+<ngb-alert [hidden] = "hideinfo" [type]="typeinfo" (click) = "hinfo()">Info</ngb-alert>
+<ngb-alert [hidden] = "hidedanger" [type]="typedanger" (click) = "hdanger()">Danger</ngb-alert>
+

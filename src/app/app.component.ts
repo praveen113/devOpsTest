@@ -7,4 +7,25 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Continous integration setup Done';
+  typesucess = 'success';
+  typeinfo = 'info';
+  typewarning = 'warning';
+  typedanger = 'danger';
+  hidesucess = false;
+  hidewarning = false;
+  hideinfo = false;
+  hidedanger = false;
+
+  hsucess () {
+    this.hidesucess = true;
+  }
+  hwarning () {
+    this.hidewarning = true;
+  }
+  hinfo () {
+    this.hideinfo = true;
+  }
+  hdanger () {
+    this.hidedanger = true;
+  }
 }
