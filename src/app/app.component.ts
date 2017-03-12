@@ -30,7 +30,5 @@ export class AppComponent {
     this.hidedanger = true;
   }
 
-  buttonListen(value){
-    alert(value);
-  }
+
 }
