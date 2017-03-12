@@ -15,6 +15,7 @@ export class AppComponent {
   hidewarning = false;
   hideinfo = false;
   hidedanger = false;
+  isCollapsed = false;
 
   hsucess () {
     this.hidesucess = true;
@@ -27,5 +28,9 @@ export class AppComponent {
   }
   hdanger () {
     this.hidedanger = true;
+  }
+
+  buttonListen(value){
+    alert(value);
   }
 }

@@ -45,3 +45,18 @@
 <ngb-alert [hidden] = "hideinfo" [type]="typeinfo" (click) = "hinfo()">Info</ngb-alert>
 <ngb-alert [hidden] = "hidedanger" [type]="typedanger" (click) = "hdanger()">Danger</ngb-alert>
 
+<p>
+  <button type="button" class="btn btn-outline-primary" (click)="isCollapsed = !isCollapsed"
+          [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
+    Toggle
+  </button>
+</p>
+<div id="collapseExample" [ngbCollapse]="isCollapsed">
+  <div class="card">
+    <div class="card-block">
+      You can collapse this card by clicking Toggle
+    </div>
+  </div>
+</div>
+
+<app-event-binding (clicked)="buttonListen($event)"></app-event-binding>
